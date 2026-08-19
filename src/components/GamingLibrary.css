@@ -1,0 +1,163 @@
+.library-section {
+  margin-top: 30px;
+
+  padding: 25px;
+
+  background: #1e2022;
+
+  border-radius: 15px;
+}
+
+.library-section h2 {
+  margin-bottom: 25px;
+
+  font-size: 21px;
+
+  text-decoration: underline;
+}
+
+.library-section h2 span {
+  color: white;
+}
+
+.library-section h2 {
+  color: #ec4f91;
+}
+
+.library-header,
+.library-row {
+  display: grid;
+
+  grid-template-columns:
+    2fr
+    1fr
+    1fr
+    1fr
+    120px;
+
+  align-items: center;
+}
+
+.library-header {
+  padding-bottom: 15px;
+
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.library-row {
+  min-height: 75px;
+
+  border-top: 1px solid #2b2d2f;
+}
+
+.library-game {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+.library-game img {
+  width: 55px;
+  height: 55px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+}
+
+.library-game h3 {
+  font-size: 11px;
+
+  margin-bottom: 5px;
+}
+
+.library-game p {
+  color: #777;
+
+  font-size: 9px;
+}
+
+.library-data {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.library-data strong {
+  font-size: 10px;
+}
+
+.library-data span {
+  color: #777;
+
+  font-size: 9px;
+}
+
+.download-button {
+  padding: 9px 14px;
+
+  border: 1px solid #444;
+
+  border-radius: 20px;
+
+  background: transparent;
+
+  color: #777;
+
+  font-size: 9px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.download-button:hover {
+  color: #ec4f91;
+
+  border-color: #ec4f91;
+}
+
+.library-section .pink-button {
+  display: block;
+
+  margin: 20px auto 0;
+
+  border: none;
+
+  padding: 12px 25px;
+
+  border-radius: 25px;
+
+  background: #ec4f91;
+
+  color: white;
+
+  font-size: 11px;
+
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .library-header {
+    display: none;
+  }
+
+  .library-row {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+
+    padding: 15px 0;
+  }
+
+  .library-data {
+    flex-direction: row;
+
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,89 @@
+.popular-section {
+  margin-top: 30px;
+
+  padding: 25px;
+
+  background: #1e2022;
+
+  border-radius: 15px;
+}
+
+.no-games {
+  grid-column: 1 / -1;
+
+  padding: 50px;
+
+  text-align: center;
+
+  color: #888;
+
+  font-size: 16px;
+}
+
+.popular-section h2 {
+  margin-bottom: 25px;
+
+  font-size: 21px;
+
+  text-decoration: underline;
+}
+
+.popular-section h2 span {
+  color: white;
+}
+
+.popular-section h2 strong {
+  color: #ec4f91;
+}
+
+.games-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+.pink-button {
+  display: block;
+
+  margin: 22px auto 0;
+
+  border: none;
+
+  padding: 12px 25px;
+
+  border-radius: 25px;
+
+  background: #ec4f91;
+
+  color: white;
+
+  font-size: 11px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.pink-button:hover {
+  background: #ff65a5;
+
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .games-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .games-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .popular-section {
+    padding: 18px;
+  }
+}
